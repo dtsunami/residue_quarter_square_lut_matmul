@@ -7,14 +7,24 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
-## How it works
+## Chinese Remainder Theorem(CRT) Matrix Multiply
 
-Explain how your project works
+Number theoretic transforms can be used to transform numbers into a surrogate field where it may be easier 
+to perform computations. The CRT can be used to transfer large integers into a residue number system of several
+smaller integers, calculations can then be performed on the residues and then they can be combined back into the
+original domain to get the final result.
+
+The goal of this project is to test creating a 32x32 asynchronous matrix multiply unit that performs the
+multiplication using a quarter-square based lookup table. The quarter square formula allows the collapse
+of a 2-dimensional multiplication lookup table into a single-dimensional table of quarter squares which
+hopefully can be implemented in a area and gate efficient way:-P
+
+$$ ab = \frac{1}{4}\left(a + b\right)^2 - \frac{1}{4}\left(a - b)^2 $$
 
 ## How to test
 
-Explain how to use your project
+TODO: finish this
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+dunno
