@@ -19,7 +19,7 @@ multiplication using a quarter-square based lookup table. The quarter square for
 of a 2-dimensional multiplication lookup table into a single-dimensional table of quarter squares which
 hopefully can be implemented in a area and gate efficient way:-P
 
-$$ ab = \frac{1}{4}\left(a + b\right)^2 - \frac{1}{4}\left(a - b)^2 $$
+$$ ab = \frac{1}{4}\left( a + b \right)^2 - \frac{1}{4}\left( a - b \right)^2 $$
 
 ## How to test
 
