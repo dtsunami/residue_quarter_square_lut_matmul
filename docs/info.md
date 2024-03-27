@@ -38,8 +38,8 @@ get a compelling ops per watt, possibly at the expense of some area for the look
 The CRT transform is completed for a integer $n$ by choosing several small coprime integers 
 and calculating the modulo for $n$ with respect to each. So if $i_1,i_2,i_3$ are coprime integers then 
 the CRT can be used to transform $n$ into residues and then calculations performed on the residues modulo 
-the respective $i_*$ and the inverse transform can be used after to get the result in the original domain
-as long as the $n < N = i_1*i_2*i_3$ then no information is lost. This is similar in practice to the use 
+the respective $i$ and the inverse transform can be used after to get the result in the original domain
+as long as the $n < N = i_1 \cdot i_2 \cdot i_3$ then no information is lost. This is similar in practice to the use 
 of FFT to perform convolutions where the surrogate field is the frequency domain rather than the residues.
 
 
