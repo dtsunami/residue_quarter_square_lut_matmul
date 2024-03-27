@@ -23,8 +23,8 @@ $$ ab = \frac{1}{4}\left( a + b \right)^2 - \frac{1}{4}\left( a - b \right)^2 $$
 
 If $a$ and $b$ are integer, in the case that $a + b$ is even the square will be a multiple of 4 
 as well as the square of $a - b$ so that both $\frac{1}{4}(a + b)^2$ and $\frac{1}{4}(a - b)^2$ are integers. 
-In the case that $a + b$ is odd then $a - b$ will be odd and each square will have a factor of $\frac{1}{4}$ 
-which will cancel in the difference so that $ ab = \frac{1}{4}\left( a + b \right)^2 - \frac{1}{4}\left( a - b \right)^2 $
+In the case that $a + b$ is odd then $a - b$ will be odd also and each square will have a factor of $\frac{1}{4}$ 
+which will cancel in the difference so that $ab = \frac{1}{4}( a + b )^2 - \frac{1}{4}( a - b)^2$
 is an integer.
 
 ## How to test
