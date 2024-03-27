@@ -19,13 +19,21 @@ multiplication using a quarter-square based lookup table. The quarter square for
 of a 2-dimensional multiplication lookup table into a single-dimensional table of quarter squares which
 hopefully can be implemented in a area and gate efficient way:-P
 
+### Quarter-Squares lookup table multiply
+
 $$ ab = \frac{1}{4}\left( a + b \right)^2 - \frac{1}{4}\left( a - b \right)^2 $$
 
-If $a$ and $b$ are integer, in the case that $a + b$ is even the square will be a multiple of 4 
+If $a$ and $b$ are integers, in the case that $a + b$ is even the square will be a multiple of 4 
 as well as the square of $a - b$ so that both $\frac{1}{4}(a + b)^2$ and $\frac{1}{4}(a - b)^2$ are integers. 
 In the case that $a + b$ is odd then $a - b$ will be odd also and each square will have a factor of $\frac{1}{4}$ 
-which will cancel in the difference so that $ab = \frac{1}{4}( a + b )^2 - \frac{1}{4}( a - b)^2$
-is an integer.
+which will cancel in the difference so that $\frac{1}{4}( a + b )^2 - \frac{1}{4}(a - b)^2$ so this means that
+the lookup table for the quarter square terms can be implemented with integers only. So the strategy is to 
+precalculate the factors $int(n^2/4)$ for the domain of small integers(3-5 bits). To perform the lookup we
+simply must calculate one addition and one subtraction, lookup the quarter squares factors and finally do another 
+subtraction to get the multiplication result. Main idea is that this can be done in a cdyn optimized way to
+get a compelling ops per watt, possibly at the expense of some area for the lookup tables.
+
+### 
 
 ## How to test
 
