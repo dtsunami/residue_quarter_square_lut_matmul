@@ -14,7 +14,7 @@ project:
   top_module:  "tt_um_dang_crt_mm"
   
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
-  source_files:        
+  source_files:
     - "crt_mm.sv"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
