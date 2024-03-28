@@ -1,14 +1,18 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# Chinese Remainder Theorem Residue matrix multiply with quarter-squares LUT
 
 - [Read the documentation for project](docs/info.md)
 
-## What is Tiny Tapeout?
+## Chinese Remainder Theorem(CRT) and residue number system
 
-TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+We can reduce the size of large integers by calculating the modulus with respect to a few coprime integers and 
+then perform calculations with the remainders(residues) that are more difficult than the large integers. 
+Once the calculations are doen we can use an interpolation formula to convert back to the larger integer
+and get the result. This will be lossless as long as the product of the coprime integers is larger than the original 
+large integer.
 
-To learn more and get started, visit https://tinytapeout.com.
+
 
 ## Verilog Projects
 
