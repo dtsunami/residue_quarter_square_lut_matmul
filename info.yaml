@@ -4,8 +4,8 @@ project:
   author:       "Dan Gilbert"
   discord:      "dfstar"
   description:  "Chinese Remainder Theorem asynchronous matrix multiply with quarter square lookup table"
-  language:     "SystemVerilog"VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  language:     "SystemVerilog"
+  clock_hz:     50000000
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
