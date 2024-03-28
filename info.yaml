@@ -3,7 +3,7 @@ project:
   title:        "Chinese Remainder Theorem asynchronous matrix multiply with quarter square lookup table"
   author:       "Dan Gilbert"
   discord:      "dfstar"
-  description:  ""Chinese Remainder Theorem asynchronous matrix multiply with quarter square lookup table"
+  description:  "Chinese Remainder Theorem asynchronous matrix multiply with quarter square lookup table"
   language:     "SystemVerilog"VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
